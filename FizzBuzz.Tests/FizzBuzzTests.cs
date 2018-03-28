@@ -17,6 +17,29 @@ namespace FizzBuzz.Tests
         public void ShouldReturnNumber()
         {
             Assert.Equal("1", fizzBuzz.Print(1));
+            Assert.Equal("2", fizzBuzz.Print(2));
+
+        }
+
+        [Fact]
+        
+        public void ShouldReturnFizz()
+        {
+            Assert.Equal("Fizz", fizzBuzz.Print(3));
+        }
+
+        [Fact]
+        
+        public void ShouldReturnBuzz()
+        {
+            Assert.Equal("Buzz", fizzBuzz.Print(10));
+        }
+
+        [Fact]
+        
+        public void ShouldReturnFizzBuzz()
+        {
+            Assert.Equal("FizzBuzz", fizzBuzz.Print(15));
         }
     }
 }
